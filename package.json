@@ -1,0 +1,11 @@
+{
+  "name": "chandy-lamport",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc; node dist/controller.js"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "typescript": "^2.8.1"
+  }
+}
