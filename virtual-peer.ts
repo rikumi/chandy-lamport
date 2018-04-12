@@ -9,10 +9,10 @@ class Message {
   constructor(public type: 'resource' | 'snapshot', public value: number) {}
 
   toString() {
-    return this.type === 'resource' ? 
+    return (this.type === 'resource' ? 
       chalk.green('资源') : 
       chalk.yellow('标签')
-    + ' ' + this.value
+    ) + ' ' + this.value
   }
 }
 

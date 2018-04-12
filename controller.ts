@@ -25,11 +25,9 @@ const sleep = t => new Promise(r => setTimeout(r, t));
   j.initiatePayment(k, 35)
   await sleep(1200)
 
-  i.initiatePayment(k, 32)
-  await sleep(800)
-
   i.initiateSnapshot(301)
   await sleep(1600)
-  
-  j.initiatePayment(i, 29)
+
+  i.initiatePayment(j, 32)
+  await sleep(800)
 })()
